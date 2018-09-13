@@ -1,0 +1,3 @@
+#!/usr/bin/env bash
+
+node -r dotenv/config ./build/index.js "$@"

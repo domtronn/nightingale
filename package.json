@@ -1,0 +1,46 @@
+{
+  "name": "nightingale",
+  "version": "1.0.0",
+  "description": "A tool to convert sharing links between multiple platforms",
+  "main": "index.js",
+  "bin": {
+    "nightingale": "bin/nightingale"
+  },
+  "scripts": {
+    "ng": "ts-node ./bin/index.ts",
+    "preb": "clear",
+    "b": "babel src --out-dir build",
+    "b:watch": "npm run b -- --watch",
+    "b:quiet": "npm run b > /dev/null",
+    "br": "npm run b; node -r dotenv/config build/index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/domtronn/nightingale.git"
+  },
+  "keywords": [
+    "music",
+    "tool",
+    "sharing"
+  ],
+  "author": "Dom Charlesworth <dgc336@gmail.com> (http://domcharlesworth.co.uk/)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/domtronn/nightingale/issues"
+  },
+  "homepage": "https://github.com/domtronn/nightingale#readme",
+  "devDependencies": {
+    "@babel/cli": "^7.0.0",
+    "@babel/core": "^7.0.1",
+    "@babel/plugin-proposal-pipeline-operator": "^7.0.0",
+    "@babel/preset-env": "^7.0.0",
+    "babel-eslint": "^8.2.6",
+    "babel-plugin-pattern-matching": "^1.4.5",
+    "eslint": "^4.19.1"
+  },
+  "dependencies": {
+    "dotenv": "^6.0.0",
+    "got": "^9.2.1",
+    "ramda": "^0.25.0"
+  }
+}
